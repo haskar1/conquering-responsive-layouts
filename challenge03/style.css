@@ -1,0 +1,48 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-background {
+    background: #23424A;
+    color: white;
+    padding: 7rem 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.intro-content {
+    width: 60%;
+}
+
+.intro-content > h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.intro-content > p {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.intro-content > button {
+    font-weight: 700;
+    font-size: 1.3rem;
+    background: #38CFD9;
+    color: #23424A;
+    mix-blend-mode: normal;
+    border-radius: 31.5px;
+    padding: 1em 3em;
+    cursor: pointer;
+}
