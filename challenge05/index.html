@@ -9,15 +9,22 @@
 </head>
 <body>
     <header>
-        <nav class="nav container">
-            <ul class="nav__list flex">
-                <li class="nav__item"><a href="#" class="nav__link home">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
-                <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign Up</a></li>
-            </ul>
-        </nav>
+        <div class="container flex">
+            <a class="logo" href="#">
+                <img src="img/logo.svg" alt="conquering responsive layouts logo">
+            </a>
+            <nav class="nav flex">
+                <ul class="nav__list nav__list--primary flex">
+                    <li class="nav__item"><a href="#" class="nav__link home">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <ul class="nav__list nav__list--secondary flex">
+                    <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="hero">

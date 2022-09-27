@@ -43,15 +43,13 @@ p + p {
 }
 
 .container {
-    width: 80%;
-    max-width: 1300px;
+    width: min(80%, 1300px);
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
 }
 
 
@@ -62,15 +60,27 @@ header {
     padding: 1.5rem 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .nav {
-    width: calc(80% + 2rem);
+    flex: 1;
+    align-items: center;
 }
 
 .nav__list {
     list-style: none;
-    width: 60%;
-    justify-content: flex-start;
     gap: .5rem;
+}
+
+.nav__list--primary {
+    margin: 0 auto;
+}
+
+.nav__item {
+    flex-shrink: 0;
 }
 
 .nav__link {
@@ -90,6 +100,7 @@ header {
 .nav__link:hover {
     opacity: .75;
 }
+
 
 /* Hero */
 
@@ -139,4 +150,26 @@ header {
 
 .sidebar > div + div {
     margin-top: 3rem;
+}
+
+
+
+/* Mobile View*/
+
+@media (max-width: 50em) {
+    .flex {
+        display: block;
+    }
+
+    .hero__text, 
+    .hero__img, 
+    .primary-content, 
+    .sidebar {
+        width: 100%;
+    }
+
+    .hero__img,
+    .sidebar {
+        margin-top: 2rem;
+    }
 }
